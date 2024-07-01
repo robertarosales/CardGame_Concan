@@ -1,7 +1,9 @@
 # CardGame_Concan
 Middle Eastern Rummy Style Card Game
+
 Concan
 Rules of the Game
+
 Cards
 1 standard set of playing cards contains 52 value cards and 1 Joker.
 A game with 2-6 players is played with 2 sets of cards with 2 Jokers Total.
@@ -44,7 +46,7 @@ Melds consist of 3 or more cards and come in two variants:
 e.g. 4♥ 4♠ 4♦ or K♥ K♠ K♦ K♣.
 • A Run is when cards are of consecutive ranks but are of the same suit, for example
 J♣ Q♣ K♣ or 4♥ 5♥ 6♥ 7♥. 
-Run sequence is A-2-3-4-5-6-7-8-9-10-J-Q-K-A
+Run sequence is A-2-3-4-5-6-7-8-9-10-J-Q-K or 2-3-4-5-6-7-8-9-10-J-Q-K-A
 
 Lay Off Cards
 Lay off cards are cards that can be added to existing melds. 
