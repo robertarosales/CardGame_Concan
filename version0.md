@@ -1,10 +1,6 @@
 # V1
 
-### Game Cycle
-
-The user requires 4 different game stages.
-
-The shuffle and deal stages can be combined into a game setup stage
+### Game loops
 
 ##### Shuffle
 
@@ -27,11 +23,21 @@ Stop when dealer has 15 cards, every other player should have 14
 
 #### Turns
 
-The players have few options when it becomes there turn:
+Player picks up card from card pile or discard pile
 
+Plays a meld if possible, or can choose not to
+
+Discards a care into the discard pile to end their turn
+
+#### Round End
+
+If the dicard card at the end of the players turn is the last card in that players hand then the game end and that player "wins"
+
+Total up the points for the cards left in each player's hand and add it to each players total
 
 #### Game End
 
+When Round End state occurs and it is the 9th round, or the number of rounds set, then the game will not reset but display the points for each player with the option to play again or return to menu
 
 ### Acquiring points
 The user described 3 conditions or "Melds" to acquire points
