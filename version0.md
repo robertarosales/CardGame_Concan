@@ -4,36 +4,33 @@
 
 ##### Shuffle
 
-Shuffle an unshuffled deck into a random order.
+Shuffle an unshuffled deck into a random order
 
-Potential Implementations:
+Potential Implementation:
 - Mark cards 1-52, Randomize list of numbers, Initialize deck with that order
 
 #### Deal
 
+Deal cards to the players
+
 ~The host starts as the "Dealer"~
-
-Randomly assign a card from the top of the deck to each player, player with highest card value is the "Dealer"
-
-Winner of previous game is the new Dealer
-
-Give a card to each player from the top of the shuffled deck going clockwise starting with dealer
-
-Stop when dealer has 15 cards, every other player should have 14
+- Randomly assign a card from the top of the deck to each player, player with highest card value is the "Dealer"
+- Winner of previous game is the new Dealer
+- Give a card to each player from the top of the shuffled deck going clockwise starting with dealer
+- Stop when dealer has 15 cards, every other player should have 14
 
 #### Turns
 
-Player picks up card from card pile or discard pile
-
-Plays a meld if possible, or can choose not to
-
-Discards a care into the discard pile to end their turn
+- Player picks up card from card pile or discard pile
+  - if the player picks up from the discard pile then they must use that card in their current turn for a meld
+- Plays a meld if possible, or can choose not to
+- Can choose to annouce possession of Joker in their card
+- Discards a care into the discard pile to end their turn
 
 #### Round End
 
-If the dicard card at the end of the players turn is the last card in that players hand then the game end and that player "wins"
-
-Total up the points for the cards left in each player's hand and add it to each players total
+- If the dicard card at the end of the players turn is the last card in that players hand then the will game end and that player "wins" the round
+- Total up the points for the cards left in each player's hand and add it to each players total
 
 #### Game End
 
@@ -58,22 +55,30 @@ The user described 3 conditions or "Melds" to acquire points
   
 ### Scoring
 
+`Rule of 51 Research Needed`
+
 - Whoever ends the round gets -25 points, typically marked as an X in the score sheet
-
-
-
-- Cards 2 though 9 are worth their face value, 2=2 5=5 9=9
-- Face Cards are all worth 10
-- Aces are worth 10
-- Jokers are worth the card they replace
-- 
+- Players with no melds automatically recieve 100 points regardless of current cards in hand
+- Players with meld count the number of points left in their hand 
+  - Cards 2 though 9 are worth their face value, 2=2 5=5 9=9
+  - Face Cards are all worth 10
+  - Aces are worth 10
+  - Announced jokers are worth 2
+  - Unannouced joekers are worth 25
 
 ### Cards
 
-Needs card name
-card id value for shuffling
-card value 
-card suit
+`Research Needed`
 
+enums:
+- Needs card name
+- card id value for shuffling
+- card value 
+- card suit
 
+### Tournament style
+
+- 12 to 16 players divided into 3-4 groups
+- each group players 3 to 4 games
+- winners advance to player eachother
 
