@@ -58,3 +58,11 @@ Aces player Low are worth 1
 Jokers are worth the card they replace
 
 ### Cards
+
+Needs card name
+card id value for shuffling
+card value 
+card suit
+
+
+
