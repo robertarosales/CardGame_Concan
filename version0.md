@@ -37,7 +37,14 @@ Total up the points for the cards left in each player's hand and add it to each 
 
 #### Game End
 
-When Round End state occurs and it is the 9th round, or the number of rounds set, then the game will not reset but display the points for each player with the option to play again or return to menu
+- When Round End state occurs and it is the 9th round, or the number of rounds set
+- The score for each player, for each round will be displayed before displaying the total
+ex:
+
+| players | round 1 | round 2| etc | total |
+| :---: | :---: | :---: | :---: | :---: |
+| p1 | score # | score # | etc | ## |
+| p2 | score # | score # | etc | ## |  
 
 ### Acquiring points
 The user described 3 conditions or "Melds" to acquire points
@@ -51,11 +58,15 @@ The user described 3 conditions or "Melds" to acquire points
   
 ### Scoring
 
-Cards 2 though 10 are worth their face value, 2=2 5=5 10=10
-Face Cards are all worth 10
-Aces played High and Aces not played are worth 10
-Aces player Low are worth 1
-Jokers are worth the card they replace
+- Whoever ends the round gets -25 points, typically marked as an X in the score sheet
+
+
+
+- Cards 2 though 9 are worth their face value, 2=2 5=5 9=9
+- Face Cards are all worth 10
+- Aces are worth 10
+- Jokers are worth the card they replace
+- 
 
 ### Cards
 
