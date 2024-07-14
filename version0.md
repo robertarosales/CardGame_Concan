@@ -6,6 +6,8 @@
 
 Shuffle an unshuffled deck into a random order
 
+calls card ctor 106 times <-- definitly optimizable
+
 ~Potential Implementation:~
 - ~Mark cards 1-52, Randomize list of numbers, Initialize deck with that order~
 
@@ -68,15 +70,39 @@ The user described 3 conditions or "Melds" to acquire points
 
 ### Cards
 
-`Research Needed`
+A Deck is just a list of cards
 
-Factory
+{
+
+class cards
+
+static int counterID = 0
+
+ctor(value, suit)
+
+this id = couterID++  //(pre vs post increment, pre if java, post if python)
+
+this value = value
+
+this suit = suit
+
+get suit()
+
+get value()
+
+get ID()
+
+// No reason to set as all variable are final upon creation
+
+}
 
 enums:
-- Needs card name
-- card id value for shuffling
-- card value 
-- card suit
+- card id value for shuffling (1-106)
+  - 1-52 for first deck
+  - 52-104 for second deck
+  - 105, 106 for jokers
+- card value (1,2,3,4,5,6,7,8,9,J,Q,K,X)
+- card suit (DIAMONDs, HEARTs, SPADEs, ClUBs)
 
 ### Tournament style
 
