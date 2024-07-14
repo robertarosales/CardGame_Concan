@@ -6,8 +6,8 @@
 
 Shuffle an unshuffled deck into a random order
 
-Potential Implementation:
-- Mark cards 1-52, Randomize list of numbers, Initialize deck with that order
+~Potential Implementation:~
+- ~Mark cards 1-52, Randomize list of numbers, Initialize deck with that order~
 
 #### Deal
 
@@ -70,6 +70,8 @@ The user described 3 conditions or "Melds" to acquire points
 
 `Research Needed`
 
+Factory
+
 enums:
 - Needs card name
 - card id value for shuffling
@@ -80,5 +82,5 @@ enums:
 
 - 12 to 16 players divided into 3-4 groups
 - each group players 3 to 4 games
-- winners advance to player eachother
+- winners advance to play eachother
 
