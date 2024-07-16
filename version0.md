@@ -102,7 +102,7 @@ enums:
   - 52-104 for second deck
   - 105, 106 for jokers
 - card value (1,2,3,4,5,6,7,8,9,J,Q,K,X)
-- card suit (DIAMONDs, HEARTs, SPADEs, ClUBs)
+- card suit (DIAMONDs, HEARTs, SPADEs, CLUBs)
 
 ### Tournament style
 
