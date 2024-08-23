@@ -14,12 +14,26 @@ class Deck:
             for s in SUIT:
                 for r in RANK:
                     self.cards.append(Card(s, r, False))
-            for j in range(self.jokers):
+            for _ in range(self.jokers):
                 self.cards.append(Card('Joker', '-J', True))
+
+    def __str__(self):
+        rtn = ''
+        for x in self.cards:
+            rtn += str(x) + ','
+        return rtn[:-1]
+    
+    def __len__(self):
+        length = 0
+        for _ in self.cards:
+            length += 1
+        return length
 
     def shuffle(self):
         random.shuffle(self.cards)
 
+    def draw_card(self):
+        return self.cards.pop(0)
 
 
     
