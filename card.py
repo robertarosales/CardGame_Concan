@@ -10,7 +10,6 @@ class Card:
     def __str__(self): 
         return (self.rank + SUIT_SYMBOLS[self.suit])
 
-
     def is_joker(self):
         return self.isJoker
     
