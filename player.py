@@ -17,6 +17,7 @@ class Player:
         pass
 
     def play_points(self):
+        
         pass
 
     def discard(self, card):
@@ -25,9 +26,8 @@ class Player:
         """
         pass
 
-    def pickup(self):
-        """
-            pickup from deck or discardpile
-            if pickingup
-        """
-        pass  
+    def pickup(self, deck, cards=1):
+        if deck: #normal pickup from deck
+            self.deck.draw_card()
+        else: #discard pile
+            self.cards.append(self.discard_pile.draw_card(cards))
