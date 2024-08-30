@@ -16,18 +16,20 @@ class Player:
             pass
         pass
 
-    def play_points(self):
-        
+    def play_points(self, run):
+        """
+            
+        """
         pass
 
     def discard(self, card):
-        """
-            if hand has card and card isn't played
-        """
-        pass
+        if card in self.hand:
+            self.discard_pile.append(self.hand.remove(card))
+            return True 
+        return False
 
     def pickup(self, deck, cards=1):
         if deck: #normal pickup from deck
             self.deck.draw_card()
         else: #discard pile
-            self.cards.append(self.discard_pile.draw_card(cards))
+            self.cards.extend(self.discard_pile.draw_card(cards))

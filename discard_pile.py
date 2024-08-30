@@ -3,13 +3,18 @@ from collections import deque
 class Discard_Pile:
     
     def __init__(self):
-        self.cards = deque()
+        self.cards = []
 
+    # for testing contents of dicard pile
+    # def __str__(self):
+    #     rtn = ''
+    #     for x in self.cards:
+    #         rtn += str(x) + ','
+    #     return rtn[:-1]
+
+    # for gameplayer purposes as only last card discarded is available for pickup
     def __str__(self):
-        rtn = ''
-        for x in self.cards:
-            rtn += str(x) + ','
-        return rtn[:-1]
+        return self.cards[len(self.cards) - 1]
     
     def __len__(self):
         length = 0
@@ -17,8 +22,5 @@ class Discard_Pile:
             length += 1
         return length
 
-    def draw_card(self, index):
-        pickups = []
-        for _ in range(index):
-            pickups.append(self.cards.pop())
-        return pickups
+    def draw_card(self):
+        return self.cards.pop(0)
