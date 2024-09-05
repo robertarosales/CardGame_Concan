@@ -5,10 +5,10 @@ import random
 
 class Deck:
 
-    def __init__(self, packs):
+    def __init__(self):
         self.cards = []
-        self.packs = packs
-        self.jokers = packs * 2
+        self.packs = 2
+        self.jokers = 4
 
         for _ in range(self.packs):
             for s in SUIT:

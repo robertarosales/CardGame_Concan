@@ -7,17 +7,24 @@ class Game:
 
     def __init__(self, players):
         self.players = players
-
-        self.deck = Deck(math.floor(players / 2))
-        
+        self.deck = Deck()
 
 
     def start(self):
         tmp = []
         self.deck.shuffle()
-        for _ in range(self.players):
-            tmp.append(Player())
+        for x in range(self.players):
+            name = input("Input player " + str(x + 1) + "'s name: ")
+            tmp.append(Player(name))
 
         self.players = tmp
+        
 
 
+
+""" Testing purposes only """
+if __name__ == "__main__":
+    g = Game(2)
+    g.start()
+    for x in g.players:
+        print(x)
